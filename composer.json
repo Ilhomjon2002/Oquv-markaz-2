@@ -1,0 +1,9 @@
+{
+    "name": "ilhom/good",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}

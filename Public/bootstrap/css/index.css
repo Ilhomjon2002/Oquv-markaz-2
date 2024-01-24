@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #454546;
+    text-align: left;
+    background-color: #fff;
+}
+
+.container-ofaccanvas {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    /* width: 500px; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.2rem;
+    margin-top: 2px;
+}
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+}
+
+/* Agar ikkita inputni bir joyga tiqish kerak bo'lsa */
+
+
+
+
+h2 {
+    text-align: center;
+    display: block;
+    font-size: 1.8em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.5em;
+}
+
+
+.btninp {
+    margin: 3px 0;
+    display: block;
+    width: 95%;
+    height: calc(1.5em + 0.9rem + 2px);
+    padding: 0.45rem 0.85rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.37rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btnsub {
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background-color: #058daf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.37rem;
+    height: calc(1.5em + 0.9rem + 2px);
+    font-size: 1rem;
+}
+
+.pregis {
+    text-align: center;
+}
+
+.pregis a {
+    text-decoration: none;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.37rem;
+    /* border-radius: 5px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.container-login {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.07); */
+    margin-top: 100px;
+}
+
+.form-control {
+    width: 95%;
+    padding: 0.45rem 0.85rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.37rem;
+    margin: 3px 0;
+}
+
+.custom-control-inline {
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+.custom-control-margin {
+    margin-left: 3rem;
+}
+
+.radinp {
+    max-width: 200px;
+    margin: 3px 6px;
+}
+
+.containerself {
+    display: flex;
+}
+
+
+
+.session-data {
+    display: flex;
+}
+
+
+.right-side {
+    order: 0;
+    /* Qidiruv qismi chap tomonda joylashgan */
+}
+
+.logout {
+    color: #058daf;
+    font-size: 1.2em;
+}
+
+.logout:hover {
+    text-decoration: none;
+}
+
+.left-side {
+    order: 2;
+    /* justify-content: space-between; */
+    /* Ism Familiya qismi o'ng tomonda joylashgan */
+}
+
+
+/* OFFCANVASNI KO'RINADIGAN QILISH */
+.offcanvas.showing,
+.offcanvas.show:not(.hiding) {
+    transform: none;
+}
+
+.offcanvas.showing,
+.offcanvas.hiding,
+.offcanvas.show {
+    visibility: visible;
+}
+
+/* 
+.offcanvas.offcanvas-start {
+  top: 0;
+  left: 0;
+  border-right: var(--bs-offcanvas-border-width) solid
+    var(--bs-offcanvas-border-color);
+  transform: translate(-100%);
+}
+
+.offcanvas.offcanvas-end {
+  top: 0;
+  right: 0;
+  border-left: var(--bs-offcanvas-border-width) solid
+    var(--bs-offcanvas-border-color);
+  transform: translate(100%);
+} */
+
+/* OFFCANVASNI KO'RINADIGAN QILISH END */
+
+
+
+/* LOGIN QILISHDAGI XATOLIKLARNI CHIQARISH */
+.alert-danger1 {
+    color: #842029;
+    background-color: #f8d7da;
+    /* border-color: #f5c2c7; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alert1 {
+    position: relative;
+    padding: 10px 15px;
+    margin: 0.4rem;
+    /* border: 1px solid transparent; */
+    border-radius: 0.25rem;
+}
+
+/* LOGIN QILISHDAGI XATOLIKLARNI CHIQARISH END */
+
+
+/* added this so that the dropdown menu would stay on top of content in the main area. */
+.not-bs-sidebar {
+    z-index: 9999;
+}
+
+/* added so the main area fills the page width. */
+.not-bs-main {
+    flex: 1;
+}
+
+/* set the size of the sidebar. */
+.not-bs-sidebar.active {
+    width: 80px;
+}
+
+/* the rest is optional basic styling. */
+.not-bs-sidebar .nav-link {
+    color: #FFFFFF;
+    padding-left: 0px;
+}
+
+.not-bs-sidebar.active .not-bs-dropdown-menu {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+}
+
+.not-bs-sidebar.active .not-bs-dropdown-menu a {
+    color: black;
+}
